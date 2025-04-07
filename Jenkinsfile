@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:18' // atau versi Node.js yang kamu butuhkan
-        }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
